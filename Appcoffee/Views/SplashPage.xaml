@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Appcoffee.Views.SplashPage" xmlns="http://schemas.microsoft.com/dotnet/2021/maui" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" BackgroundColor="#1E100A">
+ <Grid RowDefinitions="*,Auto" Padding="28,40">
+  <Image Source="coffee_splash.svg" Aspect="AspectFill" Opacity=".55" Grid.RowSpan="2" />
+  <BoxView Color="#1E100A" Opacity=".55" Grid.RowSpan="2" />
+  <VerticalStackLayout VerticalOptions="End" Spacing="12" Grid.Row="1">
+   <Label Text="Choice your Favorite Coffee" TextColor="White" FontSize="35" FontAttributes="Bold" LineBreakMode="WordWrap" />
+   <Label Text="The best grain, the finest roast, the powerfull flavor" TextColor="#F2DEC6" FontSize="16" />
+   <Button Text="Get Started" Command="{Binding GetStartedCommand}" Margin="0,18,0,10" HeightRequest="56" />
+  </VerticalStackLayout>
+ </Grid>
+</ContentPage>
